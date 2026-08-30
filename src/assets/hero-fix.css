@@ -1,0 +1,9 @@
+.hero { background: radial-gradient(circle at 76% 48%, #b7c6cf 0, transparent 38%), var(--bg); }
+.hero::after { z-index: 1; pointer-events: none; background: linear-gradient(90deg, var(--bg) 2%, color-mix(in srgb, var(--bg) 91%, transparent) 39%, rgba(255,255,255,.02) 100%); }
+.model-canvas { z-index: 0; }
+.hero-copy { position: relative; z-index: 2; }
+.model-hint { z-index: 2; }
+.hero-dots { display:flex; align-items:center; gap:16px; position:absolute; z-index:3; left:clamp(20px,7vw,110px); bottom:42px; }
+.hero-dots button { width:22px; height:4px; padding:0; border:0; background:#c6c9c9; cursor:pointer; transition:width .32s ease, background .32s ease; }
+.hero-dots button.active { width:58px; background:var(--accent); }
+.hero-dots span { margin-left:-3px; color:var(--muted); font:11px Archivo; letter-spacing:.22em; }
