@@ -64,7 +64,7 @@ onMounted(() => {
     p.position.set(x, 5.4, 0);
     roof.add(p);
   }
-  roof.position.set(8, -1, 0);
+  roof.position.set(16, -1, 0);
   roof.rotation.set(-0.12, -0.54, 0);
   scene.add(roof);
   // 02 — industrial building
@@ -105,7 +105,7 @@ onMounted(() => {
     win.position.set(-4 + i * 3.4, 2.3, 7.05);
     plant.add(win);
   }
-  plant.position.set(8, -1, 0);
+  plant.position.set(16, -1, 0);
   plant.rotation.set(-0.13, -0.54, 0);
   scene.add(plant);
   // 03 — layered road with orange safety guardrails
@@ -151,7 +151,7 @@ onMounted(() => {
     r.position.set(s * 14, 2.7, 0);
     road.add(r);
   }
-  road.position.set(10, 0.5, 0);
+  road.position.set(18, 0.5, 0);
   road.rotation.set(-0.16, -0.5, 0);
   scene.add(road);
   selected = [roof, plant, road];
